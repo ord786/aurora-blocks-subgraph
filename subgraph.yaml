@@ -1,14 +1,14 @@
 specVersion: 0.0.2
-description: Indexing all xDAI Block data
-repository: https://github.com/ord786/xdai-blocks-subgraph
+description: Indexing all AURORA Block data
+repository: https://github.com/ord786/aurora-blocks-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Contract
-    network: xdai
+    network: aurora
     source:
-      address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
+      address: "0x857725685f5316808e9ad884a6513dcb5028d4ea"
       abi: ConverterRegistryContract
     mapping:
       kind: ethereum/events
